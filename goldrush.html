@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js" type="text/javascript" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<script src="goldrush.js"type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="goldrush.css">
+	<title></title>
+</head>
+<body ng-controller="mainController" >
+	<div ng-click = "click1($event)" class="map1"> 
+		<img class="maps1" src="topo-co.jpg"> 
+			<div class="marker" ng-repeat="location in coordinates" style="top:{{location.y}}px; left:{{location.x}}px;">
+				<img src = "slack-imgs.png" class= "old">
+				<textarea class= "oldtext"> Hardore Donkeys Required Here</textarea>
+			</div>
+		</div>
+		<audio controls autoplay>
+  <source src="big_rock_candy_mountain.ogg" type="audio/ogg">
+ 
+Your browser does not support the audio element.
+</audio>
+	
+	</div>
+</body>
+</html>

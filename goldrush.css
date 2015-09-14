@@ -1,0 +1,33 @@
+.map1{
+	position: relative;
+}
+
+.maps1 {
+
+	width:100%;
+
+}
+
+.marker{
+	position: absolute;
+	margin:0px;
+	width: 100px;
+box-shadow: 10px;
+z-index: 1
+}
+
+
+.old{
+	width:100%;
+	background-color: gold
+	border-width: 150px;
+	border-radius:0px 100px 100px 100px;
+border: solid 20px gold ;
+z-index: 2;
+}
+.oldtext{
+	font: 15px courier dodgerblue;
+	font-style: italic;
+	background-color: goldenrod;
+
+}
