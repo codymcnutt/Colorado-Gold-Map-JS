@@ -8,17 +8,16 @@
 	<title></title>
 </head>
 <body ng-controller="mainController" >
-	<div ng-click = "click1($event)" class="map1"> 
+	<div ng-click = "click1($event)" 
+class="map1"> 
 		<img class="maps1" src="topo-co.jpg"> 
-			<div class="marker" ng-repeat="location in coordinates" style="top:{{location.y}}px; left:{{location.x}}px;">
-				<img src = "slack-imgs.png" class= "old">
-				<textarea class= "oldtext"> Hardore Donkeys Required Here</textarea>
+			<div class="marker" ng-repeat="location in coordinates" style="top:{{location.y}}px; left:{{location.x}}px;" ng-click="$event.stopPropagation()" >
+				<img src = {{location.image}} class= "old"> 
+				<textarea  class= "oldtext"> {{location.text}} </textarea>
 			</div>
 		</div>
 		<audio controls autoplay>
   <source src="big_rock_candy_mountain.ogg" type="audio/ogg">
- 
-Your browser does not support the audio element.
 </audio>
 	
 	</div>

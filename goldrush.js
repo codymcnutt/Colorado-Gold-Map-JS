@@ -3,10 +3,15 @@ angular.module('myApp',[])
 var mainControllerFunc = function ($scope) {	
 	// $scope.myHTML = <p>"I work"</p>
 	$scope.coordinates = []
-
+ var textarray = ["I'm old", "I'm lost", "Grandma lives here", "Hardcore Donkeys Required Here", "Ain't no darn gold here", "Brrr, it's cold here", "I'm out of food", "Call 911", "This is fools gold", "OOOHHHH BOY, I'm rich", "Where's the gold", "I don't want silver", "On the big rock candy mountain", "I'm out of whiskey", "My donkey died"]
+var imagearray = ["images/01.png", "images/02.png", "images/03.png", "images/04.png", "images/05.png", "images/06.png", "images/07.png", "slack-imgs.png"]
 	$scope.click1 = function(event) {
-		$scope.coordinates.push( {x:event.clientX,y:event.clientY} )
+	
 		console.log($scope.coordinates)
+		console.log(event)
+		var r =Math.floor(Math.random() * textarray.length)
+		var i =Math.floor(Math.random() * imagearray.length)
+		$scope.coordinates.push( {x:event.pageX,y:event.pageY,text:textarray[r], image:imagearray[i]} )
 	}
 
 }
