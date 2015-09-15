@@ -14,6 +14,10 @@
 	width: 100px;
 box-shadow: 10px;
 z-index: 1
+animation-name:hinge;
+	animation-duration:2s;
+	animation-delay: 2s;
+	  -webkit-animation-fill-mode: forwards;
 }
 
 
@@ -24,10 +28,47 @@ z-index: 1
 	border-radius:0px 100px 100px 100px;
 border: solid 20px gold ;
 z-index: 2;
+animation-name:hinge;
+	animation-duration:3s;
+	animation-delay: 3s;
+	  -webkit-animation-fill-mode: forwards;
 }
 .oldtext{
 	font: 15px courier dodgerblue;
 	font-style: italic;
 	background-color: goldenrod;
-
+	animation-name:hinge;
+	animation-duration:2s;
+	animation-delay: 2s;
+	  -webkit-animation-fill-mode: forwards;
 }
+.opening{
+	background-color: peru;
+	width:90%;
+	z-index: 3;
+	position: absolute;
+	height:50%;
+	border-radius: 20px;
+	border: dashed lightgoldenrodyellow 20px;
+	text-align: center;
+	margin: 40px;
+	}
+
+	@font-face {
+    font-family: Rope;
+    src: url('Rope.ttf');
+}
+p {
+	padding-top: 200px;
+	font-family: Rope; 
+	font-size: 120px;
+	font-color: antiquewhite;
+	animation-name:hinge;
+	animation-duration:2s;
+	animation-delay: 2s;
+	  -webkit-animation-fill-mode: forwards;
+}
+.forards{
+	transparency:100%;
+}
+
