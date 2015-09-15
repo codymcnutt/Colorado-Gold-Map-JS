@@ -12,11 +12,9 @@
 	position: absolute;
 	margin:0px;
 	width: 100px;
-box-shadow: 10px;
-z-index: 1
 animation-name:hinge;
-	animation-duration:2s;
-	animation-delay: 2s;
+	animation-duration:0.5s;
+	animation-delay: 7s;
 	  -webkit-animation-fill-mode: forwards;
 }
 
@@ -28,7 +26,7 @@ animation-name:hinge;
 	border-radius:0px 100px 100px 100px;
 border: solid 20px gold ;
 z-index: 2;
-animation-name:hinge;
+animation-name:tada;
 	animation-duration:3s;
 	animation-delay: 3s;
 	  -webkit-animation-fill-mode: forwards;
@@ -52,6 +50,7 @@ animation-name:hinge;
 	border: dashed lightgoldenrodyellow 20px;
 	text-align: center;
 	margin: 40px;
+	display:none;
 	}
 
 	@font-face {
@@ -70,5 +69,8 @@ p {
 }
 .forards{
 	transparency:100%;
+	
 }
+
+
 

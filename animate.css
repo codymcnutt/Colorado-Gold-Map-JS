@@ -2555,6 +2555,7 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: translate3d(0, 700px, 0);
     transform: translate3d(0, 700px, 0);
     opacity: 0;
+    display:none;
   }
 }
 
