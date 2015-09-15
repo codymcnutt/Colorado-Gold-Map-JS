@@ -50,7 +50,10 @@ animation-name:tada;
 	border: dashed lightgoldenrodyellow 20px;
 	text-align: center;
 	margin: 40px;
-	display:none;
+		animation-name:hinge;
+	animation-duration:2s;
+	animation-delay: 2s;
+	  -webkit-animation-fill-mode: forwards;
 	}
 
 	@font-face {
@@ -67,10 +70,7 @@ p {
 	animation-delay: 2s;
 	  -webkit-animation-fill-mode: forwards;
 }
-.forards{
-	transparency:100%;
-	
-}
+
 
 
 
